@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(222, 222, 222);
+}
+
+.box {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 50%;
+    margin-top: 200px;
+}
+
+.head {
+    background-color: white;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border-bottom-left-radius: 110px 60px;
+    border-bottom-right-radius: 110px 60px;
+    height: 150px;
+    width: 200px;
+    border: 5px solid #313131;
+    border-bottom-width: 10px;
+    box-shadow: inset 10px -10px 0 0 #efefef;
+    background-image: radial-gradient(circle at 50% 60%, #313131 10px, transparent 11px), radial-gradient(ellipse at 50% 80%, #777070 5px, transparent 6px);
+}
+
+.head::before, .head::after {
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    content: '';
+    top: 33%;
+    left: 6%;
+    border-radius: 50%;
+    background-color: #313131;
+}
+
+/* Left eye */
+.head::before {
+    background-image: radial-gradient(circle at 71% 45%, white 3px, transparent 4px), radial-gradient(circle at 67% 45%, #313131 6px, transparent 7px), radial-gradient(circle at 65% 45%, white 9px, transparent 10px);
+    transform: rotate(-40deg);
+    box-shadow: 0px -68px 0px 0px #313131;
+}
+
+/* Right eye */
+.head::after {
+    background-image: radial-gradient(circle at 30% 45%, white 3px, transparent 4px), radial-gradient(circle at 34% 45%, #313131 6px, transparent 7px), radial-gradient(circle at 35% 45%, white 9px, transparent 10px);
+    left: 25%;
+    transform: rotate(40deg);
+    box-shadow: 0px -68px 0px 0px #313131;
+}
