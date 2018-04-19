@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(222, 222, 222);
+}
+
+.box {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 50%;
+    margin-top: 200px;
+}
+
+.bezel {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(65, 88, 121);
+    background-color: white;
+    box-shadow: 0px 8px 4px 1px #b9b9b9;
+}
+
+.face {
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    background-image:radial-gradient(circle at center,white 54%,transparent 55%,transparent 62%,white 64%),linear-gradient(to right,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),linear-gradient(to bottom,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),linear-gradient(60deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),linear-gradient(30deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),linear-gradient(-60deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),linear-gradient(-30deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%);
+    box-shadow: 0px -4px 1px 4px #e2e1e1;
+    margin: 0 auto;
+    position: relative;
+    top: 52%;
+    transform: translateY(-52%);
+}
+
+.center {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: #4b475d;
+    box-shadow: 0px 4px 0px 0px #989898b8;
+    margin: 0 auto;
+    position: relative;
+    top: 52%;
+    transform: translateY(-52%);
+}
+
+.hand {
+    background-color: #4b475d;
+    height: 8px;
+    border-radius: 6px;
+    width: 60px;
+    position: relative;
+    transform: translate(75px, 57px);
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.1);
+}
+
+.min {
+    position: absolute;
+    transform: rotate(35deg) translate(61px, 4px);
+    width: 30px;
+}
