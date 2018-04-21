@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(222, 222, 222);
+}
+
+.box {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 50%;
+    margin-top: 200px;
+}
+
+.roll {
+    background-color: white;
+    height: 100px;
+    width: 300px;
+    border-radius: 90px 90px 70px 70px;
+    box-shadow: 0px 25px 0px -20px #ccc8c8;
+    background-image: linear-gradient(to bottom, #c5c5c53b 22%, transparent 22%), linear-gradient(85deg, transparent 35%, #c5c5c53b 35%, #c5c5c53b 50%, transparent 50%, transparent 50%);
+}
+
+.roll:before {
+    content: '';
+    position: absolute;
+    background-color: #ff792e;
+    height: 30px;
+    width: 280px;
+    border-radius: 50% 50% 10px 10px;
+    top: -15px;
+    left: 10px;
+    box-shadow: inset 0px -37px 0px -30px #98471a6e;
+    background-image: linear-gradient(50deg, /* first */ transparent 10%, #fdc3a3 10%, #fdc3a3 13%, transparent 13%, /* second */ transparent 20%, #fdc3a3 20%, #fdc3a3 23%, transparent 23%, /* third */ transparent 31%, #fdc3a3 31%, #fdc3a3 34%, transparent 34%, /* fourth */ transparent 41%, #fdc3a3 41%, #fdc3a3 44%, transparent 44%, /* fifth */ transparent 51%, #fdc3a3 51%, #fdc3a3 54%, transparent 54%, /* sixth */ transparent 61%, #fdc3a3 61%, #fdc3a3 64%, transparent 64%, /* seventh */ transparent 71%, #fdc3a3 71%, #fdc3a3 74%, transparent 74%, /* eigth */ transparent 81%, #fdc3a3 81%, #fdc3a3 84%, transparent 84%, /* ninth */ transparent 91%, #fdc3a3 91%, #fdc3a3 94%, transparent 94%);
+}
+
+.roll:after {
+    content: '';
+    position: absolute;
+    height: 120px;
+    width: 50px;
+    background-color: #063e06;
+    left: 125px;
+    top: -20;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    box-shadow: inset -35px 0px 0px -20px #d8d6d61c;
+}
