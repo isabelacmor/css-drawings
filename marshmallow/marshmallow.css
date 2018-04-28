@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(222, 222, 222);
+}
+
+.box {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 50%;
+    margin-top: 200px;
+}
+
+.marshmallow {
+    background-color: white;
+    border: 4px solid #949494;
+    height: 200px;
+    width: 150px;
+    border-bottom-left-radius: 100px 40px;
+    border-bottom-right-radius: 100px 40px;
+    border-top-left-radius: 100px 40px;
+    border-top-right-radius: 100px 40px;
+    background-image: radial-gradient(circle at 50% -120px, transparent 50%, whitesmoke 50%);
+}
+
+.marshmallow:before {
+    content: '';
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #949494;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    box-shadow: 65px 0px 0px 0px #949494, 32px 25px 0px 11px whitesmoke, 32px 30px 0px 10px grey;
+}
+
+.marshmallow:after {
+    content: '';
+    height: 120px;
+    width: 15px;
+    position: absolute;
+    background-color: #c3c3c3;
+    border: 4px solid #949494;
+    top: -100px;
+    left: 68px;
+    box-shadow: 0px 307px 0px -4px #c3c3c3, 0px 307px 0px 0px #949494;
+}
