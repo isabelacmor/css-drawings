@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(to bottom, white, #c6f2ffad);
+}
+
+.box {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 50%;
+    margin-top: 200px;
+}
+
+.clouds {
+    background-color: #ccf4ff;
+    border-radius: 50px 50px 0 0;
+    height: 15px;
+    width: 15px;
+    box-shadow: 20px -6px 0px 6px #ccf4ff, 49px -15px 0px 15px #ccf4ff, 92px -27px 0 27px #ccf4ff, 124px -20px 0 20px #ccf4ff, 160px -15px 0 15px #ccf4ff, 193px -8px 0 8px #ccf4ff, 214px 0px 0 0px #ccf4ff;
+}
+
+.clouds:after {
+    content: '';
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background-color: #ffff61;
+    border-radius: 50%;
+    z-index: -9;
+    top: -80px;
+    left: -10;
+}
